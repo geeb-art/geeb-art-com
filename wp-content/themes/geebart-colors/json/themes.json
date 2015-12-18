@@ -1,0 +1,74 @@
+{
+	"classic": {
+		"primary":"#111111",
+		"secondary":"#444444",
+		"tertiary":"#DDDDDD",
+		"quaternary":"#CCCCCC"
+	},
+	"goldfish": {
+		"primary":"#E8ECD0",
+		"secondary":"#F38630",
+		"tertiary":"#1982B7",
+		"quaternary":"#D36610"
+	},
+	"raz": {
+		"primary":"#542437",
+		"secondary":"#C02942",
+		"tertiary":"#ECD078",
+		"quaternary":"#D95B43"
+	},
+	"moon": {
+		"primary":"#45484B",
+		"secondary":"#C5BC8E",
+		"tertiary":"#ECE5CE",
+		"quaternary":"#DED69B"
+	},
+	"cake": {
+		"primary":"#673F28",
+		"secondary":"#F09E89",
+		"tertiary":"#EEE6AB",
+		"quaternary":"#F1D4AF"
+	},
+	"sea":{
+		"primary":"#002D50",
+		"secondary":"#3B8686",
+		"tertiary":"#EFFFBE",
+		"quaternary":"#CFF09E"
+	},
+	"hotSauce":{
+		"primary":"#FEFCFC",
+		"secondary":"#004A00",
+		"tertiary":"#B90404",
+		"quaternary":"#D92424"
+	},
+	"american":{
+		"primary":"#B32E2B",
+		"secondary":"#476388",
+		"tertiary":"#EBE0CD",
+		"quaternary":"#DBD0BD"
+	},
+	"easterGhost":{
+		"primary":"#5B4A5C",
+		"secondary":"#72A9BA",
+		"tertiary":"#F7E585",
+		"quaternary":"#B996BC"
+	},
+	"mysteryMachine":{
+		"primary":"#554236",
+		"secondary":"#60B99A",
+		"tertiary":"#FF8835",
+		"quaternary":"#F1EFA5"
+	},
+	"marcoSunset":{
+		"primary":"#331327",
+		"secondary":"#FF6E27",
+		"tertiary":"#F34739",
+		"quaternary":"#991766"
+	},
+	"neonBurst":{
+		"primary":"#FFAA00",
+		"secondary":"#00AAFF",
+		"tertiary":"#DDFF00",
+		"quaternary":"#FF00AA"
+	}
+}
