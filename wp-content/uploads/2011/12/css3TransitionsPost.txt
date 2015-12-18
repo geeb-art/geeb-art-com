@@ -1,0 +1,107 @@
+Want to know how to animate elements? Want the Easy CSS3 Transitions Tutorial? You are in the right place. After reading and doing some self exploration my Easy CSS3 Transitions Guide will allow you to create CSS3 transitions like a boss. This tutorial will explore link animations, the :hover pseudo link state, browser compatibility, and my CSS3 catch all (something to allow you to work less and do more.) Without further ado, I give you the Easy CSS3 Transitions Tutorial!
+<h2>Explaining CSS3 Transitions</h2>
+The best way to explain how CSS3 Transitions work, is to think about its application towards link interaction, yes, the basic "a" tag. A link usually has a static or starting state by default, and also has an active or :hover state. The CSS selectors usually look something like...
+<code>#content a.transTest{background-color:#000;}<br />#content a.transTest:hover{background-color:#fff;}</code>
+In this example, as the user hovers over the link it will turn from black to white.  This will have a sudden on/off appearance.  This is not very humanistic to say the least, but it has been the web standard for a long time.  So, what if we could smoothly <strong><em>transition</em></strong> from the link's static state to its active state?  Or, in other words, from the default to the hover state?  Fortunately, CSS3 transitions make this possible.
+<h2>Making the CSS3 Transition</h2>
+<br />
+<a href="http://geebart.com/wp-content/uploads/2011/12/css3Transitions.png"><img src="http://geebart.com/wp-content/uploads/2011/12/css3Transitions.png" alt="css3 Transitions" title="css3Transitions" width="602" height="184" class="alignnone size-full wp-image-2253" /></a>
+Before I give you all of the source code, I am going to make a button first.  To do this, I am going to think about how I want the button to look at the start and then as someone hovers.  Grab the styles below to test it out on your own.  You will notice I am using some new CSS3 properties to style my buttons.  Remember, since this is CSS3, some of these styles will NOT work in older browsers.
+<code>#content a.noTrans{<br />
+	text-decoration: none;
+	background-color: #444;
+	padding: 5px 10px;
+	color: #CCC;
+	border: 1px solid #222;<br />
+	-webkit-border-radius: 5px; 
+     -moz-border-radius: 5px; 
+          border-radius: 5px; <br />	  
+	 -webkit-box-shadow: 0px 0px 4px #222; 
+     -moz-box-shadow: 0px 0px 4px #222;
+          box-shadow: 0px 0px 4px #222;
+#content a.noTrans:hover{
+	background-color: #222;
+	padding: 5px 10px;
+	color: #fff;
+	border: 1px solid #000;<br />	  
+	-webkit-box-shadow: 0px 0px 7px #000;
+     -moz-box-shadow: 0px 0px 7px #000;
+          box-shadow: 0px 0px 7px #000; 
+}
+</code>
+<p><em>This code looks like this...</em></p>
+<p><a class="noTrans">CSS Button</a></p>
+
+<h2>Adding the CSS3 Transitions "Catch-All"</h2>
+Add this section of your code to the static state style declaration for the link.
+<code>-webkit-transition: all 0.4s ease-out;<br /> 
+     -moz-transition: all 0.4s ease-out; 
+      -ms-transition: all 0.4s ease-out; 
+       -o-transition: all 0.4s ease-out;
+          transition: all 0.4s ease-out;
+</code>
+<h3>The Finale!</h3>
+<p><a class="transTest">CSS Button</a></p>
+<p>This code accounts for all browsers that support CSS3 transitions and will transition all styles being declared during the :hover state.  If you wanted to transition a particular style, replace "all" with the desired target, e.g., "width", "color", "background-color", "font-size".  The only condition here is that you must use properties that have numerical values.  So, you could not transition from <strong>display:none;</strong> to <strong>display:block;</strong>, but you could transition from <strong>opacity:0;</strong> to <strong>opacity:1;</strong></p>
+
+Hope it helps.  Feel free to post comments and questions below!
+<style>
+#content a.noTrans{
+	text-decoration: none;
+	background-color: #444;
+	padding: 5px 10px;
+	color: #CCC;
+	border: 1px solid #222;
+	
+	-webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+		  
+	 -webkit-box-shadow: 0px 0px 4px #222; 
+     -moz-box-shadow: 0px 0px 4px #222; 
+          box-shadow: 0px 0px 4px #222; 
+}
+#content a.noTrans:hover{
+	background-color: #222;
+	padding: 5px 10px;
+	color: #fff;
+	border: 1px solid #000;
+	cursor:pointer;
+		  
+	 -webkit-box-shadow: 0px 0px 7px #000;
+     -moz-box-shadow: 0px 0px 7px #000;
+          box-shadow: 0px 0px 7px #000;
+}
+#content a.transTest{
+	text-decoration: none;
+	background-color: #444;
+	padding: 5px 10px;
+	color: #CCC;
+	border: 1px solid #222;
+	
+	-webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+		  
+	 -webkit-box-shadow: 0px 0px 4px #222; 
+     -moz-box-shadow: 0px 0px 4px #222; 
+          box-shadow: 0px 0px 4px #222; 
+		  
+	 -webkit-transition: all 0.4s ease-out; 
+     -moz-transition: all 0.4s ease-out; 
+      -ms-transition: all 0.4s ease-out; 
+       -o-transition: all 0.4s ease-out;
+          transition: all 0.4s ease-out;
+}
+#content a.transTest:hover{
+	background-color: #222;
+	padding: 5px 10px;
+	color: #fff;
+	border: 1px solid #000;
+	cursor:pointer;
+		  
+	 -webkit-box-shadow: 0px 0px 7px #000; 
+     -moz-box-shadow: 0px 0px 7px #000; 
+          box-shadow: 0px 0px 7px #000;
+}
+</style>
